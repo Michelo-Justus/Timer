@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    margin: 0;
+    font-family:'poppins','swap';
+    /* background-image: linear-gradient(to right, rgb(1, 158, 158), rgb(1, 48, 51)); */
+}
+.house{
+    background-color: rgb(255, 255, 255);
+    padding: 50px 40px;
+}
+.house .day{
+    color: rgb(184, 105, 2);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+.house .time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.house .time .hours, .minutes, .seconds{
+    box-sizing: border-box;
+    border: 4px solid rgb(255, 255, 255);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+
+    border-radius: 0% 0% 0% 0%;
+    background-color: #fff;
+    box-shadow: rgba(25, 25, 26, 0.4) 0px 2px 8px 0px;
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: rgb(184, 105, 2);
+}
+.house .time:hover .hours:hover, .minutes:hover, .seconds:hover{
+    cursor: pointer;
+    background-color: rgb(184, 105, 2);
+    color: #fff;
+    transition: 0.1s ease-in;
+}
+.house .dot{
+    font-size: 100px;
+    color: rgb(184, 105, 2);
+    opacity: 0.8;
+}
+.bottom{
+    background-image: linear-gradient(45deg,rgb(255, 0, 119),rgb(184, 69, 2));
+    height: 250px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+}
+.bottom .note{
+    margin: auto;
+    font-size: 100px;
+    color: #fff;
+    text-transform: uppercase;
+}
